@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convocatorias - Maestria en Ciencias de la Ingenieria - ITO</title>
+    <title>Convocatorias - MCI - ITO</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,135 +17,181 @@
     </header>
 
     <nav class="nav-bar">
-    <ul>
-        <li><a href="index.html" >Inicio</a></li>
-        <li><a href="plan.html">Plan de Estudios</a></li> 
-        <li><a href="convocatorias.html" class="active">Convocatorias</a></li>
-        <li><a href="nucleo.html">Nucleo Academico</a></li>
-        <li><a href="egresados.html">Seguimiento de Egresados</a></li>
-    </ul>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="plan.html">Plan de Estudios</a></li>
+            <li><a href="convocatorias.html" class="active">Convocatorias</a></li>
+            <li><a href="nucleo.html">Nucleo Academico</a></li>
+            <li><a href="egresados.html">Seguimiento de Egresados</a></li>
+        </ul>
     </nav>
+
     <div class="convocatorias-container">
-        <h2>Convocatorias</h2>
+        <h2>Convocatoria Maestría 2026-2028</h2>
+        <p>Seleccione cada apartado para desplegar la información detallada:</p>
 
         <div class="convocatoria-card">
-            <div class="convocatoria-header" onclick="toggleConvocatoria('conv-dci')">
-                <h3>Doctorado en Ciencias de la Ingenieria - Convocatoria 2025 (Generacion 2025-2029)</h3>
-                <span class="tag">VIGENTE</span>
-                <button class="convocatoria-toggle" id="btn-conv-dci">Ver mas</button>
+            <div class="convocatoria-header" onclick="toggleConvocatoria('seccion-general')">
+                <h3>Convocatoria General e Información del Programa</h3>
+                <span class="tag">ABIERTA</span>
+                <button class="convocatoria-toggle" id="btn-seccion-general">Ver mas</button>
             </div>
-            
-            <div class="convocatoria-body" id="conv-dci">
-                <p>El Tecnologico Nacional de Mexico, a traves del Instituto Tecnologico de Oaxaca y la Division de Estudios de Posgrado e Investigacion, convoca a los egresados de las Maestrias en Ciencias de la Ingenieria y Maestrias en Ingenieria afines a las carreras de Ingenieria Quimica, Civil, Industrial, Telecomunicaciones, Electronica, Electrica, Biomedica, Mecanica y Sistemas Computacionales a participar en el proceso de seleccion 2025 para ingresar al <strong>Doctorado en Ciencias de la Ingenieria</strong>.</p>
-
-                <p>Este programa con orientacion a la Investigacion se imparte en modalidad escolarizada con la Linea de Generacion y Aplicacion del Conocimiento (LGAC): <strong>Tecnologias de Informacion y Comunicaciones (TIC)</strong>.</p>
-
-                <h4>Perfil de Egreso</h4>
-                <p>El (la) egresado(a) al terminar sus estudios, contara con los conocimientos y habilidades cientificas y tecnologicas para:</p>
-                <ol>
-                    <li>Realizar investigacion basica, aplicada y de frontera en tecnologias emergentes aplicando un enfoque multi, inter y transdisciplinario.</li>
-                    <li>Fortalecer sus habilidades para comunicar, difundir y defender los resultados de sus trabajos de investigacion en foros cientificos, tecnologicos y de divulgacion.</li>
-                    <li>Proponer, emprender y liderar proyectos de desarrollo cientifico e innovacion tecnologica con base en el bienestar social sustentable desde una perspectiva critica y de responsabilidad tecnologica.</li>
-                </ol>
-
-                <h4>1. Requisitos para el Proceso de Admision</h4>
+            <div class="convocatoria-body" id="seccion-general">
+                <p><strong>El Tecnológico Nacional de México</strong> a través del <strong>Instituto Tecnológico de Oaxaca</strong> y la División de Estudios de Posgrado e Investigación <strong>CONVOCA</strong> a participar en el proceso de selección 2026 para ingresar a la <strong>Maestría en Ciencias de la Ingeniería (Generación 2026-2028)</strong>.</p>
+                
+                <p>Este programa con orientación a la Investigación se imparte en modalidad escolarizada con las siguientes Líneas de Generación y Aplicación del Conocimiento (LGAC):</p>
                 <ul>
-                    <li>Copia del titulo, cedula de maestria y certificado de estudios (promedio minimo 80).</li>
-                    <li>Solicitud de admision y Curriculum Vitae (CV) con documentos probatorios.</li>
-                    <li>Carta de exposicion de motivos y carta compromiso.</li>
-                    <li>Dos cartas de recomendacion academicas.</li>
-                    <li>Anteproyecto de investigacion.</li>
-                    <li>Constancia de dominio de un segundo idioma.</li>
-                    <li>Pago de ficha y registro en linea.</li>
+                    <li>Tecnologías de Información y Comunicaciones (TIC’s)</li>
+                    <li>Sistemas Eléctricos de Potencia (SEP)</li>
                 </ul>
+                <p>El objetivo de la Maestría es formar profesionistas especializados en Ciencias de la Ingeniería con los conocimientos científicos y tecnológicos para proponer soluciones a problemáticas actuales, actuando de manera ética, desde sus ámbitos de acción profesional participando en la transformación social.</p>
+            </div>
+        </div>
 
-                <h4>2. Proceso de Admision</h4>
+        <div class="convocatoria-card">
+            <div class="convocatoria-header" onclick="toggleConvocatoria('seccion-ingreso')">
+                <h3>Perfil de Ingreso</h3>
+                <span class="tag">INFO</span>
+                <button class="convocatoria-toggle" id="btn-seccion-ingreso">Ver mas</button>
+            </div>
+            <div class="convocatoria-body" id="seccion-ingreso">
+                <p>Dirigido a los egresados de las carreras de:</p>
+                <ul>
+                    <li>Tecnologías de Información y Comunicaciones</li>
+                    <li>Ingeniería Electrónica</li>
+                    <li>Ingeniería en Telecomunicaciones</li>
+                    <li>Ingeniería Eléctrica</li>
+                    <li>Ingeniería en Sistemas Computacionales</li>
+                    <li>Ingeniería Biomédica</li>
+                    <li>Ingeniería Civil</li>
+                    <li>Ingeniería Mecánica y afines.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="convocatoria-card">
+            <div class="convocatoria-header" onclick="toggleConvocatoria('seccion-egreso')">
+                <h3>Perfil de Egreso</h3>
+                <span class="tag">INFO</span>
+                <button class="convocatoria-toggle" id="btn-seccion-egreso">Ver mas</button>
+            </div>
+            <div class="convocatoria-body" id="seccion-egreso">
+                <p>El (la) egresado(a) al terminar sus estudios, contará con los conocimientos y habilidades científicas y tecnológicas para:</p>
+                <ol>
+                    <li>Identificar, analizar y proponer soluciones a problemáticas regionales y nacionales utilizando las Tecnologías de Información y Comunicaciones, y Sistemas Eléctricos de Potencia.</li>
+                    <li>Divulgar el conocimiento adquirido mediante la presentación de trabajos en foros científicos y a la comunidad en general.</li>
+                    <li>Ejecutar proyectos de investigación y desarrollo tecnológico con base en el bienestar social sustentable desde una perspectiva critica y de responsabilidad tecnológica.</li>
+                    <li>Desarrollar dispositivos flexibles y sensibles a las condiciones del entorno social para la construcción de nuevas relaciones tecnológicas entre las necesidades de los usuarios y medio ambiente.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="convocatoria-card">
+            <div class="convocatoria-header" onclick="toggleConvocatoria('seccion-calendario')">
+                <h3>Calendario y Proceso de Admisión</h3>
+                <span class="tag">FECHAS</span>
+                <button class="convocatoria-toggle" id="btn-seccion-calendario">Ver mas</button>
+            </div>
+            <div class="convocatoria-body" id="seccion-calendario">
                 <table class="tabla-proceso">
                     <thead>
                         <tr>
                             <th>Actividad</th>
                             <th>Fechas</th>
+                            <th>Modalidad</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Pre-registro y entrega de documentos</td>
-                            <td>21 de marzo - 8 de agosto de 2025</td>
+                            <td>1. Pre-registro en línea</td>
+                            <td>17 de marzo al 8 de agosto de 2025</td>
+                            <td>En línea</td>
                         </tr>
                         <tr>
-                            <td>Examen de admision</td>
+                            <td>2. Entrega de documentación para validación</td>
+                            <td>17 de marzo al 8 de agosto de 2025</td>
+                            <td>Presencial</td>
+                        </tr>
+                        <tr>
+                            <td>3. Pago de ficha ($1,550.00 M.N.)</td>
+                            <td>17 de marzo al 8 de agosto de 2025</td>
+                            <td>En línea / Banco</td>
+                        </tr>
+                        <tr>
+                            <td>4. Entrega de comprobante de pago</td>
+                            <td>17 de marzo al 8 de agosto de 2025</td>
+                            <td>Presencial</td>
+                        </tr>
+                        <tr>
+                            <td>5. Entrega de ficha de aspirante</td>
+                            <td>17 de marzo al 8 de agosto de 2025</td>
+                            <td>Presencial</td>
+                        </tr>
+                        <tr>
+                            <td>6. Examen de ingreso (CENEVAL EXANI-III)</td>
                             <td>13 de agosto de 2025</td>
+                            <td>Presencial</td>
                         </tr>
                         <tr>
-                            <td>Entrevista con el Comite</td>
+                            <td>7. Evaluación de Compromiso y Permanencia</td>
+                            <td>14 de agosto de 2025</td>
+                            <td>Presencial</td>
+                        </tr>
+                        <tr>
+                            <td>8. Entrevista con el comité de selección</td>
                             <td>15 de agosto de 2025</td>
+                            <td>Presencial</td>
                         </tr>
                         <tr>
-                            <td>Publicacion de resultados</td>
+                            <td>9. Publicación de la lista de aceptados</td>
                             <td>19 de agosto de 2025</td>
+                            <td>En línea</td>
                         </tr>
                     </tbody>
                 </table>
-
-                <h4>Banco de Proyectos - LGAC: TIC</h4>
-                
-                <p class="proyecto-categoria">Salud</p>
-                <ul>
-                    <li>Desarrollo de sistema inteligente de adquisicion multisensorial para personas con TEA.</li>
-                    <li>Diseno de sensor de presion plantar y nodo sensor LoRa.</li>
-                    <li>Prediccion de enfermedades cardiovasculares mediante IA y senales ECG.</li>
-                    <li>Rehabilitacion Post-ACV usando senales EMG/EEG e Inteligencia Artificial.</li>
-                </ul>
-
-                <p class="proyecto-categoria">Agua y Vivienda</p>
-                <ul>
-                    <li>Tratamiento de aguas residuales optimizado con IA.</li>
-                    <li>Evaluacion de durabilidad de concretos con tecnologias emergentes.</li>
-                </ul>
-
-                <p class="proyecto-categoria">Industria y Telecomunicaciones</p>
-                <ul>
-                    <li>Gemelo digital de robot colaborativo con sistemas ciberfisicos.</li>
-                    <li>Algoritmos de IA para control de vuelo en drones.</li>
-                    <li>Mitigacion de interferencias en redes inalambricas de siguiente generacion.</li>
-                </ul>
-
-                <h4>Contacto</h4>
-                <p>Mas informacion: <strong>posgrado.ingenieria@itoaxaca.edu.mx</strong></p>
             </div>
         </div>
 
         <div class="convocatoria-card">
-            <div class="convocatoria-header" onclick="toggleConvocatoria('conv-ingreso')">
-                <h3>Perfil de Ingreso del Plan de Estudios</h3>
-                <span class="tag">INFORMACION</span>
-                <button class="convocatoria-toggle" id="btn-conv-ingreso">Ver mas</button>
+            <div class="convocatoria-header" onclick="toggleConvocatoria('seccion-requisitos')">
+                <h3>Requisitos de Admisión</h3>
+                <span class="tag">REQUISITOS</span>
+                <button class="convocatoria-toggle" id="btn-seccion-requisitos">Ver mas</button>
             </div>
-            <div class="convocatoria-body" id="conv-ingreso">
-                <p>El Programa de Maestria en Ciencias de la Ingenieria esta dirigido a profesionistas egresados de areas de ingenieria y ciencias aplicadas, interesados en desarrollar proyectos de investigacion cientifica orientados a la solucion de problemas prioritarios a nivel nacional y regional.</p>
-                <p>Los aspirantes deberan poseer una solida formacion en matematicas y fisica, asi como conocimientos especificos acordes con la linea de investigacion en la que deseen participar, en campos como Ingenieria Electronica, Electrica, Telecomunicaciones, Sistemas Computacionales, Biomedica, Mecanica, Civil, Industrial, Quimica, Alimentos o areas afines.</p>
+            <div class="convocatoria-body" id="seccion-requisitos">
                 <ul>
-                    <li>Capacidad para identificar, planear y resolver problemas.</li>
-                    <li>Disposicion para la actualizacion continua.</li>
-                    <li>Habilidades de analisis, sintesis y comunicacion cientifica.</li>
+                    <li>Copia de título, cédula y certificado de licenciatura (promedio mínimo de 80).</li>
+                    <li>Solicitud de admisión.</li>
+                    <li>Currículum Vitae (CV) con fotografía.</li>
+                    <li>Carta de exposición de motivos.</li>
+                    <li>Manifiesto de no haber causado baja.</li>
+                    <li>Anteproyecto de investigación.</li>
+                    <li>2 fotografías tamaño infantil, blanco y negro, con adherible.</li>
+                    <li>Realizar registro en línea: <a href="https://docs.google.com/forms/d/e/1FAIpQLSfergAOZTGB9A05PK-l84ieeyjxZjw18h3oKZ80s5cN2hWe-" target="_blank">Formulario de Registro</a></li>
+                    <li>Comprobante de pago de ficha.</li>
+                    <li>Presentar examen CENEVAL EXANI-III.</li>
                 </ul>
+                <p style="margin-top: 15px; padding: 10px; background-color: #f9f9f9; border-left: 4px solid #e8a020;">
+                    <strong>Descarga de formatos:</strong><br>
+                    Puede descargar la solicitud, el formato de CV y demás documentos aquí: 
+                    <a href="https://drive.google.com/drive/folders/1koezIeo9xbD5rdR761uRFC9rN3AKUNNK?usp=sharing" target="_blank" style="color: #1a3a5c; font-weight: bold;">Carpeta de Formatos (Google Drive)</a>
+                </p>
             </div>
         </div>
 
         <div class="convocatoria-card">
-            <div class="convocatoria-header" onclick="toggleConvocatoria('conv-egreso')">
-                <h3>Perfil de Egreso del Plan de Estudios</h3>
-                <span class="tag">INFORMACION</span>
-                <button class="convocatoria-toggle" id="btn-conv-egreso">Ver mas</button>
+            <div class="convocatoria-header" onclick="toggleConvocatoria('seccion-contacto')">
+                <h3>Información de Contacto</h3>
+                <span class="tag">CONTACTO</span>
+                <button class="convocatoria-toggle" id="btn-seccion-contacto">Ver mas</button>
             </div>
-            <div class="convocatoria-body" id="conv-egreso">
-                <p>El (La) Maestro(a) en Ciencias de la Ingenieria contara con las habilidades, conocimientos y competencias para:</p>
-                <ol>
-                    <li><strong>Generar y aplicar conocimiento cientifico y tecnologico</strong> orientado a la solucion de problemas reales en los sectores estrategicos del pais.</li>
-                    <li><strong>Comunicar de forma clara, estructurada y etica</strong> los resultados de sus investigaciones a comunidades cientificas y a la sociedad.</li>
-                    <li><strong>Proponer proyectos de investigacion</strong> con impacto social, productivo y ambiental.</li>
-                    <li><strong>Aplicar el conocimiento con responsabilidad social</strong> y sentido etico.</li>
-                </ol>
+            <div class="convocatoria-body" id="seccion-contacto">
+                <p>Para mayor información sobre el proceso o el programa académico:</p>
+                <ul>
+                    <li><strong>Página Web:</strong> <a href="http://www.oaxaca.tecnm.mx/posgrado" target="_blank">www.oaxaca.tecnm.mx/posgrado</a></li>
+                    <li><strong>Correo electrónico:</strong> posgrado.ingenieria@itoaxaca.edu.mx</li>
+                    <li><strong>Ubicación:</strong> Unidad de Posgrado e Investigación, Instituto Tecnológico de Oaxaca.</li>
+                </ul>
             </div>
         </div>
 
@@ -176,24 +222,17 @@
 
     <script>
         function toggleConvocatoria(id) {
-            // Buscamos el div con el contenido
             var body = document.getElementById(id);
-            // Buscamos el boton para cambiarle el texto
             var btn = document.getElementById('btn-' + id);
 
-            // Verificamos si existe el elemento antes de intentar acceder a su lista de clases
             if (body && btn) {
                 if (body.classList.contains('open')) {
-                    // Si esta abierto, lo cerramos
                     body.classList.remove('open');
                     btn.textContent = 'Ver mas';
                 } else {
-                    // Si esta cerrado, lo abrimos
                     body.classList.add('open');
                     btn.textContent = 'Ver menos';
                 }
-            } else {
-                console.error("No se encontro el elemento con ID: " + id);
             }
         }
     </script>
