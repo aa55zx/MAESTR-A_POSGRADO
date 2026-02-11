@@ -607,3 +607,47 @@ body {
         display: inline-block;
     }
 }
+/* ===== ESTILOS PARA LA TABLA LGAC ===== */
+.lgac-section {
+    margin-top: 50px;
+}
+
+.lgac-section h3 {
+    color: #1a3a5c;
+    font-size: 22px;
+    margin-bottom: 20px;
+    border-left: 5px solid #e8a020;
+    padding-left: 15px;
+}
+
+.tabla-lgac {
+    width: 100%;
+    border-collapse: collapse; /* Para que los bordes se unan */
+    border: 2px solid #000; /* Borde externo grueso como en la imagen */
+    font-family: 'Segoe UI', sans-serif;
+    margin-bottom: 40px;
+}
+
+.tabla-lgac th {
+    background-color: #fff;
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #000; /* Bordes negros sólidos */
+    font-size: 16px;
+}
+
+.tabla-lgac td {
+    padding: 15px;
+    border: 1px solid #000; /* Bordes negros sólidos */
+    color: #333;
+    font-size: 15px;
+    vertical-align: middle;
+    line-height: 1.5;
+}
+
+.tabla-lgac .lgac-title {
+    font-weight: 600;
+    color: #000;
+}
