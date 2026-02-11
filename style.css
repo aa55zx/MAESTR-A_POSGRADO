@@ -1,0 +1,609 @@
+/* =========================================
+   1. RESET Y BASE
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========================================
+   2. BARRA SUPERIOR INSTITUCIONAL (LOGOS)
+   ========================================= */
+.header-institucional {
+    background-color: #fff;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    border-bottom: 3px solid #1a3a5c; /* Borde azul inferior */
+    flex-wrap: wrap;
+}
+
+.header-institucional img {
+    height: 60px;
+    object-fit: contain;
+}
+
+.header-institucional img.logo-ito {
+    height: 65px;
+}
+
+/* =========================================
+   3. BARRA DE NAVEGACION (MENU AZUL)
+   ========================================= */
+.nav-bar {
+    background-color: #1a3a5c; /* Fondo azul oscuro */
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    width: 100%;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    max-width: 1100px; /* Un poco mas ancho para que quepan 5 botones */
+    margin: 0 auto;
+    padding: 0;
+}
+
+.nav-bar ul li {
+    flex: 1;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: #fff; /* Texto blanco */
+    text-decoration: none;
+    padding: 14px 15px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s;
+    border-bottom: 4px solid transparent;
+}
+
+.nav-bar ul li a:hover {
+    background-color: #2a5a8c;
+    border-bottom: 4px solid #e8a020; /* Linea naranja al pasar el mouse */
+}
+
+/* Clase para la pestaña activa actual */
+.nav-bar ul li a.active {
+    background-color: #2a5a8c;
+    border-bottom: 4px solid #e8a020;
+    font-weight: 700;
+}
+
+/* =========================================
+   4. ESTILOS DE PAGINA: INICIO (HERO)
+   ========================================= */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Altura fija */
+    overflow: hidden;
+    background-color: #1a3a5c; /* Color de fondo por si no carga la imagen */
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(26, 58, 92, 0.6) 0%,
+        rgba(26, 58, 92, 0.4) 50%,
+        rgba(26, 58, 92, 0.8) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-overlay h1 {
+    color: #fff;
+    font-size: 42px;
+    font-weight: 700;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    margin-bottom: 10px;
+}
+
+.hero-overlay p {
+    color: #f0f0f0;
+    font-size: 22px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+/* =========================================
+   5. SECCIONES DE CONTENIDO GENERAL
+   ========================================= */
+.content-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 30px;
+    flex: 1; /* Para que empuje el footer hacia abajo si hay poco contenido */
+}
+
+.content-section h2 {
+    color: #1a3a5c;
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e8a020;
+}
+
+.content-section p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Visión, Misión y Objetivos */
+.vision-objetivos {
+    margin-top: 40px;
+}
+
+.vision-objetivos .bloque {
+    background: #fff;
+    border-left: 5px solid #e8a020;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-radius: 0 5px 5px 0;
+}
+
+.vision-objetivos .bloque h3 {
+    color: #1a3a5c;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   6. ESTILOS DE PAGINA: CONVOCATORIAS
+   ========================================= */
+.convocatorias-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 30px;
+}
+
+.convocatorias-container h2 {
+    color: #1a3a5c;
+    font-size: 28px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e8a020;
+}
+
+.convocatoria-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-left: 6px solid #1a3a5c;
+    margin-bottom: 25px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.06);
+    border-radius: 4px;
+}
+
+.convocatoria-header {
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.convocatoria-header:hover {
+    background-color: #f0f4f8;
+}
+
+.convocatoria-header h3 {
+    color: #1a3a5c;
+    font-size: 18px;
+    margin: 0;
+    flex: 1;
+}
+
+.convocatoria-header .tag {
+    background-color: #e8a020;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 15px;
+    white-space: nowrap;
+}
+
+.convocatoria-toggle {
+    display: inline-block;
+    background-color: #1a3a5c;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+    border: none;
+}
+
+.convocatoria-toggle:hover {
+    background-color: #2a5a8c;
+}
+
+/* Cuerpo de la convocatoria (Oculto por defecto) */
+.convocatoria-body {
+    display: none; /* Oculto */
+    padding: 0 30px 30px 30px;
+    border-top: 1px solid #eee;
+    background-color: #fff;
+}
+
+/* Clase para mostrar el cuerpo */
+.convocatoria-body.open {
+    display: block; /* Visible */
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.convocatoria-body h4 {
+    color: #1a3a5c;
+    font-size: 17px;
+    margin: 25px 0 15px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e8a020;
+    font-weight: 700;
+}
+
+.convocatoria-body ul, .convocatoria-body ol {
+    margin: 10px 0 15px 25px;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.convocatoria-body li {
+    margin-bottom: 5px;
+}
+
+/* Tablas dentro de convocatorias */
+.tabla-proceso {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.tabla-proceso thead th {
+    background-color: #1a3a5c;
+    color: #fff;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.tabla-proceso tbody td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    color: #555;
+    vertical-align: top;
+    background-color: #fff;
+}
+
+.tabla-proceso tbody tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+.proyecto-categoria {
+    color: #1a3a5c;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 15px 0 5px 0;
+    text-transform: uppercase;
+    background: #f0f4f8;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+/* =========================================
+   7. ESTILOS DE PAGINA: PLAN DE ESTUDIOS
+   ========================================= */
+.plan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.semestre-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.semestre-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: #b0c4de;
+}
+
+.semestre-header {
+    background-color: #1a3a5c;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    border-bottom: 4px solid #e8a020;
+}
+
+.materia-list {
+    list-style: none;
+    padding: 20px;
+    margin: 0; /* Reset del margen general */
+}
+
+.materia-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+    color: #555;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.materia-list li:last-child {
+    border-bottom: none;
+}
+
+.materia-list li::before {
+    content: "•";
+    color: #e8a020;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 0;
+    margin-right: 12px;
+}
+
+.info-adicional {
+    margin-top: 50px;
+    background: #fff;
+    padding: 30px;
+    border-left: 5px solid #1a3a5c;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.info-adicional h3 {
+    color: #1a3a5c;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.info-adicional ul {
+    margin-left: 20px;
+    color: #555;
+}
+
+/* =========================================
+   8. PAGINAS PLACEHOLDER (NUCLEO/EGRESADOS)
+   ========================================= */
+.placeholder-page {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 60px 30px;
+    background: #fff;
+    border: 1px dashed #ccc;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.placeholder-page h2 {
+    color: #1a3a5c;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.placeholder-page p {
+    color: #888;
+    font-size: 18px;
+}
+
+/* =========================================
+   9. FOOTER (PIE DE PAGINA)
+   ========================================= */
+.footer {
+    background-color: #1a3a5c;
+    color: #ccc;
+    padding: 50px 30px 20px;
+    margin-top: auto; /* Empuja el footer al final */
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-info {
+    flex: 1;
+    min-width: 280px;
+}
+
+.footer-info h3 {
+    color: #e8a020;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-info p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #d0d0d0;
+    line-height: 1.6;
+}
+
+.footer-info .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: #d0d0d0;
+    font-size: 14px;
+}
+
+.footer-info .contact-item .icon-label {
+    color: #e8a020;
+    font-weight: 700;
+    min-width: 60px;
+}
+
+.footer-map {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+}
+
+.footer-map iframe {
+    width: 100%;
+    height: 250px;
+    border: 4px solid #2a5a8c;
+    border-radius: 4px;
+}
+
+.footer-bottom {
+    max-width: 1000px;
+    margin: 30px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #2a5a8c;
+    text-align: center;
+    font-size: 13px;
+    color: #888;
+}
+
+/* =========================================
+   10. RESPONSIVE (CELULARES)
+   ========================================= */
+@media (max-width: 768px) {
+    /* Header Logos */
+    .header-institucional {
+        gap: 20px;
+        padding: 15px 20px;
+        flex-direction: column;
+    }
+
+    .header-institucional img {
+        height: 40px;
+    }
+    
+    .header-institucional img.logo-ito {
+        height: 50px;
+    }
+
+    /* Navegación */
+    .nav-bar ul {
+        flex-direction: column;
+    }
+    
+    .nav-bar ul li a {
+        padding: 12px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* Hero */
+    .hero {
+        height: auto;
+        min-height: 300px;
+    }
+    
+    .hero img {
+        height: 300px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 24px;
+    }
+    
+    .hero-overlay p {
+        font-size: 16px;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-map {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* Convocatorias Header */
+    .convocatoria-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .convocatoria-toggle {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .convocatoria-header .tag {
+        margin-left: 0;
+        margin-top: 5px;
+        display: inline-block;
+    }
+}
