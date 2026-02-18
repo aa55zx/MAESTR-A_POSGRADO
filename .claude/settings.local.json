@@ -1,7 +1,18 @@
 {
   "permissions": {
     "allow": [
-      "Bash(dir:*)"
+      "Bash(dir:*)",
+      "Bash(python:*)",
+      "Bash(python3 -c \"import fitz; doc = fitz.open\\(r''C:\\\\Users\\\\merin\\\\Downloads\\\\REVISTA INGENESIS NUMERO ESPECIAL \\(2\\).pdf''\\); print\\(''Paginas:'', doc.page_count\\); text = ''''; [text.__add__\\(doc[i].get_text\\(\\)\\) for i in range\\(min\\(30, doc.page_count\\)\\)]\")",
+      "Bash(powershell -command \"Get-Content ''C:\\\\Users\\\\merin\\\\Downloads\\\\REVISTA INGENESIS NUMERO ESPECIAL \\(2\\).pdf'' -Encoding Byte | Select-Object -First 100\")",
+      "Bash(powershell -command \"\n$pdfPath = ''C:\\\\Users\\\\merin\\\\Downloads\\\\REVISTA INGENESIS NUMERO ESPECIAL \\(2\\).pdf''\nAdd-Type -AssemblyName System.IO\n$bytes = [System.IO.File]::ReadAllBytes\\($pdfPath\\)\n$text = [System.Text.Encoding]::Latin1.GetString\\($bytes\\)\n$streams = [System.Text.RegularExpressions.Regex]::Matches\\($text, ''BT\\(.*?\\)ET'', [System.Text.RegularExpressions.RegexOptions]::Singleline\\)\nWrite-Host \\(''Found '' + $streams.Count + '' text blocks''\\)\n\")",
+      "Bash(pdftotext:*)",
+      "Bash(powershell -Command \"Get-Content ''C:\\\\Users\\\\merin\\\\Downloads\\\\revista_extracted.txt'' -Raw\")",
+      "Bash(powershell:*)",
+      "Bash(node --version:*)",
+      "Bash(node:*)",
+      "Bash(npm install:*)",
+      "Bash(del \"C:\\\\Users\\\\merin\\\\Downloads\\\\MAESTR-A_POSGRADO\\\\revista.html\")"
     ]
   }
 }

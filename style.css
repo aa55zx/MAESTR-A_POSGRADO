@@ -709,6 +709,22 @@ body {
     font-size: 24px;
 }
 
+.asignatura-intro {
+    margin-bottom: 20px;
+}
+
+.asignatura-intro p {
+    font-size: 15px;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+.asignatura-intro p:last-child {
+    margin-bottom: 0;
+}
+
 .asignatura-list {
     list-style: none;
     padding: 0;
@@ -752,6 +768,15 @@ body {
     border-bottom: 2px solid #e8a020;
 }
 
+.seccion-subtitulo {
+    color: #1a3a5c;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e8a020;
+}
+
 .nucleo-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -769,7 +794,9 @@ body {
 
 .academico-card img {
     width: 150px;
-    height: auto;
+    height: 230px;
+    object-fit: cover;
+    object-position: center top;
     display: block;
     margin: 20px auto 0;
     border-radius: 4px;
@@ -791,6 +818,14 @@ body {
     line-height: 1.3;
 }
 
+.academico-titulo {
+    font-size: 13px;
+    color: #666;
+    margin: 2px 15px 8px;
+    font-style: italic;
+    line-height: 1.3;
+}
+
 .academico-correo {
     font-size: 13px;
     margin: 0 15px;
@@ -806,14 +841,52 @@ body {
     color: #e8a020;
 }
 
+/* ── Divisor entre secciones de planta académica ── */
+.seccion-divisor {
+    max-width: 1100px;
+    margin: 50px auto 0;
+    padding: 0 30px;
+}
+
+.seccion-divisor hr {
+    border: none;
+    border-top: 2px solid #e0e0e0;
+    margin: 0 0 30px;
+}
+
+.seccion-divisor h2 {
+    color: #1a3a5c;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e8a020;
+}
+
+/* Grid de 2 columnas para secciones pequeñas */
+.nucleo-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px 50px;
+}
+
 @media (max-width: 900px) {
     .nucleo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nucleo-grid-2 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 550px) {
     .nucleo-grid {
+        grid-template-columns: 1fr;
+    }
+    .nucleo-grid-2 {
         grid-template-columns: 1fr;
     }
 }
