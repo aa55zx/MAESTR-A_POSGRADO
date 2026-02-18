@@ -662,6 +662,69 @@ body {
     color: #000;
 }
 
+/* ===== ESTILOS PARA LINEAS DE INVESTIGACION ===== */
+.lineas-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.lineas-section h3 {
+    color: #1a3a5c;
+    font-size: 24px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #e8a020;
+    text-align: center;
+}
+
+.lineas-bloque {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-left: 5px solid #1a3a5c;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    border-radius: 0 8px 8px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lineas-bloque:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+}
+
+.lineas-bloque h4 {
+    color: #1a3a5c;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e8a020;
+}
+
+.lineas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.linea-item {
+    font-size: 14px;
+    color: #333;
+    padding: 6px 0;
+}
+
+@media (max-width: 768px) {
+    .lineas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .lineas-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ===== ESTILOS PARA LA SECCION DE ASIGNATURAS ===== */
 .asignaturas-section {
     margin-top: 50px;
@@ -748,6 +811,48 @@ body {
     background: #f0f4f8;
     border-left-color: #1a3a5c;
     transform: translateX(5px);
+}
+
+/* ===== AREAS DE ASIGNATURAS OPTATIVAS ===== */
+.optativas-areas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.optativa-area-item {
+    background: #f9f9f9;
+    border-left: 3px solid #e8a020;
+    border-radius: 0 6px 6px 0;
+    padding: 16px 18px;
+    transition: all 0.2s ease;
+}
+
+.optativa-area-item:hover {
+    background: #f0f4f8;
+    border-left-color: #1a3a5c;
+    transform: translateX(5px);
+}
+
+.optativa-area-item h5 {
+    color: #1a3a5c;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 8px;
+}
+
+.optativa-area-item p {
+    color: #555;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .optativas-areas {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* =========================================
