@@ -12,7 +12,8 @@
       "Bash(node --version:*)",
       "Bash(node:*)",
       "Bash(npm install:*)",
-      "Bash(del \"C:\\\\Users\\\\merin\\\\Downloads\\\\MAESTR-A_POSGRADO\\\\revista.html\")"
+      "Bash(del \"C:\\\\Users\\\\merin\\\\Downloads\\\\MAESTR-A_POSGRADO\\\\revista.html\")",
+      "Bash(rename \"C:\\\\Users\\\\merin\\\\Downloads\\\\MAESTR-A_POSGRADO\\\\img\\\\MIGUEL.pgn\" \"MIGUEL.png\")"
     ]
   }
 }

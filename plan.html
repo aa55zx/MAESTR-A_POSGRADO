@@ -23,6 +23,8 @@
             <li><a href="convocatorias.html">Convocatorias</a></li>
             <li><a href="nucleo.html">Planta Académica</a></li>
             <li><a href="egresados.html">Egresados</a></li>
+            <li><a href="acervo.html">Acervo</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
 
@@ -31,41 +33,54 @@
         <p>El programa tiene una duración de 4 semestres (2 años). A continuación se detalla la estructura reticular:</p>
 
         <div class="plan-grid">
-            
+
             <div class="semestre-card">
-                <div class="semestre-header">Primer Semestre</div>
+                <div class="semestre-header">Semestre 1</div>
+                <div class="materia-principal">
+                    Seminario de Investigación I
+                    <span class="creditos">(4)</span>
+                </div>
+                <hr class="materia-divisor">
                 <ul class="materia-list">
-                    <li>Seminario de investigacion I (4 créditos)</li>
-                    <li>Basica I (6 créditos)</li>
-                    <li>Basica II (6 créditos)</li>
-                    <li>Basica III (6 créditos)</li>
+                    <li><span class="bullet-dorado">●</span> <strong>Básica I</strong> (6)</li>
+                    <li><span class="bullet-dorado">●</span> <strong>Básica II</strong> (6)</li>
+                    <li><span class="bullet-dorado">●</span> <strong>Básica III</strong> (6)</li>
                 </ul>
             </div>
 
             <div class="semestre-card">
-                <div class="semestre-header">Segundo Semestre</div>
+                <div class="semestre-header">Semestre 2</div>
+                <div class="materia-principal">
+                    Seminario de Investigación II
+                    <span class="creditos">(4)</span>
+                </div>
+                <hr class="materia-divisor">
                 <ul class="materia-list">
-                    <li>Seminario de Investigación II (4 créditos)</li>
-                    <li>Basica IV (6 créditos)</li>
-                    <li>Optativa I (6 créditos)</li>
-                    <li>Optativa II (6 créditos)</li>
+                    <li><span class="bullet-dorado">●</span> <strong>Básica IV</strong> (6)</li>
+                    <li><span class="bullet-dorado">●</span> <strong>Optativa I</strong> (6)</li>
+                    <li><span class="bullet-dorado">●</span> <strong>Optativa II</strong> (6)</li>
                 </ul>
             </div>
 
             <div class="semestre-card">
-                <div class="semestre-header">Tercer Semestre</div>
+                <div class="semestre-header">Semestre 3</div>
+                <div class="materia-principal">
+                    Seminario de Investigación III
+                    <span class="creditos">(4)</span>
+                </div>
+                <hr class="materia-divisor">
                 <ul class="materia-list">
-                    <li>Seminario de Investigación III (4 créditos)</li>
-                    <li>Optativa III (6 créditos)</li>
-                    <li>Optativa IV (6 créditos)</li>
+                    <li><span class="bullet-dorado">●</span> <strong>Optativa III</strong> (6)</li>
+                    <li><span class="bullet-dorado">●</span> <strong>Optativa IV</strong> (6)</li>
                 </ul>
             </div>
 
-            <div class="semestre-card">
-                <div class="semestre-header">Cuarto Semestre</div>
-                <ul class="materia-list">
-                    <li>Tesis (40 créditos)</li>
-                </ul>
+            <div class="semestre-card semestre-tesis">
+                <div class="semestre-header">Semestre 4</div>
+                <div class="materia-principal tesis-titulo">
+                    Tesis
+                    <span class="creditos">(40)</span>
+                </div>
             </div>
 
         </div>
@@ -98,10 +113,14 @@
             <div class="asignatura-bloque">
                 <h4><span class="icono-basicas"></span> Asignaturas Básicas</h4>
                 <ul class="asignatura-list">
-                    <li>Estadística Aplicada al Diseño de Experimentos</li>
                     <li>Matemáticas Aplicadas a la Ingeniería</li>
                     <li>Modelado Matemático</li>
+                    <li>Estadística Aplicada en Diseño de Experimentos</li>
                     <li>Innovación y Sustentabilidad en la Ingeniería</li>
+                    <li>Programación</li>
+                    <li>Sistemas Digitales Aplicados para el Procesamiento de Señales</li>
+                    <li>Sistemas Electrónicos de Instrumentación y Control</li>
+                    <li>Ingeniería de Calidad y Manufactura</li>
                 </ul>
             </div>
 
@@ -150,24 +169,16 @@
 
         <div class="lgac-section">
             <h3>Perfiles de Ingreso por LGAC</h3>
-            <table class="tabla-lgac">
-                <thead>
-                    <tr>
-                        <th style="width: 35%;">LGAC</th>
-                        <th>Perfil de ingreso</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="lgac-title">Tecnologías de Información y Comunicaciones</td>
-                        <td>Egresados de las carreras de Ingeniería Electrónica, Eléctrica, Tecnologías de Información y Comunicaciones, Ingeniería Biomédica, Ingeniería en Sistemas Computacionales y afines.</td>
-                    </tr>
-                    <tr>
-                        <td class="lgac-title">Diseño de Materiales en Ingeniería Sustentable</td>
-                        <td>Egresados de las carreras de Ingeniería Mecánica, Civil, Industrial, Química, Alimentos, Energías Renovables, Biotecnología, Eléctrica, Nanotecnología y afines.</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="lgac-lista">
+                <div class="lgac-item">
+                    <div class="lgac-nombre">Tecnologías de Información y Comunicaciones</div>
+                    <div class="lgac-perfil">Egresados de las carreras de Ingeniería Electrónica, Eléctrica, Tecnologías de Información y Comunicaciones, Ingeniería Biomédica, Ingeniería en Sistemas Computacionales y afines.</div>
+                </div>
+                <div class="lgac-item">
+                    <div class="lgac-nombre">Diseño de Materiales en Ingeniería Sustentable</div>
+                    <div class="lgac-perfil">Egresados de las carreras de Ingeniería Mecánica, Civil, Industrial, Química, Alimentos, Energías Renovables, Biotecnología, Eléctrica, Nanotecnología y afines.</div>
+                </div>
+            </div>
         </div>
         </div>
 
