@@ -193,16 +193,45 @@ body {
    ========================================= */
 .convocatorias-container {
     max-width: 1200px;
+    width: 95%;
     margin: 40px auto;
     padding: 0 30px;
+    box-sizing: border-box;
 }
 
 .convocatorias-container h2 {
     color: #1a3a5c;
     font-size: 28px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 2px solid #e8a020;
+}
+
+.convocatoria-intro-texto {
+    padding: 10px 0 20px 0;
+    margin-bottom: 10px;
+}
+
+.convocatoria-intro-texto p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.convocatoria-intro-texto p:last-child {
+    margin-bottom: 0;
+}
+
+.convocatoria-intro-texto ul {
+    margin: 5px 0 0 25px;
+    color: #444;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.convocatoria-intro-texto li {
+    margin-bottom: 4px;
 }
 
 .convocatoria-card {
@@ -809,6 +838,70 @@ body {
     }
 }
 
+/* ===== BOTONES ACORDEON LGAC (Líneas de Investigación) ===== */
+.lgac-btn-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.lgac-btn-item {
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.lgac-btn-titulo {
+    list-style: none;
+    background-color: #1a3a5c;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 16px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.lgac-btn-titulo::-webkit-details-marker { display: none; }
+
+.lgac-btn-titulo::after {
+    content: '▼';
+    font-size: 12px;
+    color: #e8a020;
+    transition: transform 0.3s;
+    flex-shrink: 0;
+    margin-left: 12px;
+}
+
+.lgac-btn-item[open] .lgac-btn-titulo {
+    background-color: #122a44;
+}
+
+.lgac-btn-item[open] .lgac-btn-titulo::after {
+    transform: rotate(-180deg);
+}
+
+.lgac-btn-titulo:hover {
+    background-color: #122a44;
+}
+
+.lgac-btn-desc {
+    background: #f5f8fc;
+    border-left: 5px solid #e8a020;
+    padding: 18px 22px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.lgac-btn-desc p { margin: 0; }
+
 /* ===== ESTILOS PARA LA SECCION DE ASIGNATURAS ===== */
 .asignaturas-section {
     margin-top: 50px;
@@ -1108,6 +1201,47 @@ body {
     color: #e8a020;
 }
 
+.contacto-foto-bloque {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    border-top: 4px solid #e8a020;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto-foto-placeholder {
+    width: 100%;
+    height: 370px;
+    background-color: #d0d8e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.contacto-foto-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.contacto-foto-img[src=""] {
+    display: none;
+}
+
+.contacto-foto-texto {
+    padding: 20px 25px;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: justify;
+    margin: 0;
+    border-top: 1px solid #f0f0f0;
+}
+
 /* =========================================
    13. ESTILOS DE PAGINA: ACERVO
    ========================================= */
@@ -1145,31 +1279,70 @@ body {
 .tabla-acervo thead th {
     background-color: #1a3a5c;
     color: #fff;
-    padding: 15px 20px;
-    text-align: center;
-    font-size: 14px;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 13px;
     font-weight: 700;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
     text-transform: uppercase;
     border-bottom: 4px solid #e8a020;
+    white-space: nowrap;
 }
 
 .tabla-acervo thead th:first-child {
-    text-align: left;
-}
-
-.tabla-acervo tbody td {
-    padding: 16px 20px;
-    border-bottom: 1px solid #f0f0f0;
-    font-size: 15px;
-    color: #333;
     text-align: center;
 }
 
-.tabla-acervo tbody td:first-child {
+.tabla-acervo tbody td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 13px;
+    color: #333;
     text-align: left;
+    vertical-align: middle;
+    word-break: break-word;
+}
+
+.tabla-acervo tbody td:first-child {
+    text-align: center;
     font-weight: 700;
     color: #1a3a5c;
+    white-space: nowrap;
+}
+
+.tabla-acervo tbody td:last-child {
+    text-align: center;
+}
+
+.acervo-estatus {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+}
+
+.estatus-publicado {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.estatus-aceptado {
+    background-color: #cce5ff;
+    color: #004085;
+}
+
+.estatus-revision {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.estatus-concluido {
+    background-color: #e2e3e5;
+    color: #383d41;
 }
 
 .tabla-acervo tbody tr:last-child td {
@@ -1197,6 +1370,29 @@ body {
 .acervo-num a:hover {
     background-color: #1a3a5c;
     transform: scale(1.1);
+}
+
+.tabla-acervo-cuatrimestral tbody td:first-child {
+    text-align: center;
+    font-weight: 700;
+    color: #1a3a5c;
+}
+
+.tabla-acervo-cuatrimestral tbody td:nth-child(2) {
+    text-align: center;
+    font-weight: 600;
+    color: #555;
+}
+
+.tabla-acervo-cuatrimestral .col-cuatrimestre {
+    text-align: center;
+    width: 120px;
+}
+
+.tabla-acervo-cuatrimestral .acervo-num {
+    text-align: center;
+    color: #aaa;
+    font-size: 16px;
 }
 
 /* =========================================

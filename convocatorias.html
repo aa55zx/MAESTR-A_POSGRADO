@@ -32,13 +32,23 @@
 
     <div class="convocatorias-container">
         <h2>Convocatoria Maestría</h2>
+
+        <div class="convocatoria-intro-texto">
+            <p>El <strong>Tecnológico Nacional de México</strong> a través del <strong>Instituto Tecnológico de Oaxaca</strong> y la División de Estudios de Posgrado e Investigación <strong>CONVOCA</strong> a participar en el proceso de selección para ingresar a la <strong>Maestría en Ciencias de la Ingeniería</strong>.</p>
+            <p>Este programa con orientación a la Investigación se imparte en modalidad escolarizada con las siguientes Líneas de Generación y Aplicación del Conocimiento (LGAC):</p>
+            <ul>
+                <li>Tecnologías de Información y Comunicaciones (TIC's)</li>
+                <li>Sistemas Eléctricos de Potencia (SEP)</li>
+            </ul>
+        </div>
+
         <p>Seleccione cada apartado para desplegar la información detallada:</p>
 
         <div class="convocatoria-card">
             <div class="convocatoria-header" onclick="toggleConvocatoria('seccion-general')">
                 <h3>Objetivo del Programa</h3>
 
-                <button class="convocatoria-toggle" id="btn-seccion-general">Ver mas</button>
+                <button class="convocatoria-toggle" id="btn-seccion-general">Ver más</button>
             </div>
             <div class="convocatoria-body" id="seccion-general">
                 <p>El objetivo de la Maestría es formar profesionistas especializados en Ciencias de la Ingeniería con
@@ -52,7 +62,7 @@
             <div class="convocatoria-header" onclick="toggleConvocatoria('seccion-ingreso')">
                 <h3>Perfil de Ingreso</h3>
 
-                <button class="convocatoria-toggle" id="btn-seccion-ingreso">Ver mas</button>
+                <button class="convocatoria-toggle" id="btn-seccion-ingreso">Ver más</button>
             </div>
             <div class="convocatoria-body" id="seccion-ingreso">
                 <p>Perfil de ingreso del plan de estudios:</p>
@@ -83,7 +93,7 @@
             <div class="convocatoria-header" onclick="toggleConvocatoria('seccion-egreso')">
                 <h3>Perfil de Egreso</h3>
 
-                <button class="convocatoria-toggle" id="btn-seccion-egreso">Ver mas</button>
+                <button class="convocatoria-toggle" id="btn-seccion-egreso">Ver más</button>
             </div>
             <div class="convocatoria-body" id="seccion-egreso">
                 <p></p>
@@ -112,7 +122,7 @@
             <div class="convocatoria-header" onclick="toggleConvocatoria('seccion-calendario')">
                 <h3>Calendario y Proceso de Admisión</h3>
 
-                <button class="convocatoria-toggle" id="btn-seccion-calendario">Ver mas</button>
+                <button class="convocatoria-toggle" id="btn-seccion-calendario">Ver más</button>
             </div>
             <div class="convocatoria-body" id="seccion-calendario">
                 <h4>Proceso de Admisión</h4>
@@ -220,7 +230,7 @@
             <div class="convocatoria-header" onclick="toggleConvocatoria('seccion-requisitos')">
                 <h3>Requisitos de Admisión</h3>
 
-                <button class="convocatoria-toggle" id="btn-seccion-requisitos">Ver mas</button>
+                <button class="convocatoria-toggle" id="btn-seccion-requisitos">Ver más</button>
             </div>
             <div class="convocatoria-body" id="seccion-requisitos">
                 <ul>
@@ -251,7 +261,7 @@
             <div class="convocatoria-header" onclick="toggleConvocatoria('seccion-contacto')">
                 <h3>Información de Contacto</h3>
 
-                <button class="convocatoria-toggle" id="btn-seccion-contacto">Ver mas</button>
+                <button class="convocatoria-toggle" id="btn-seccion-contacto">Ver más</button>
             </div>
             <div class="convocatoria-body" id="seccion-contacto">
                 <p>Para mayor información sobre el proceso o el programa académico:</p>
@@ -270,9 +280,9 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-info">
-                <h3>Instituto Tecnologico de Oaxaca</h3>
-                <p>Avenida Ing. Victor Bravo Ahuja No. 125</p>
-                <p>Oaxaca de Juarez, Oaxaca, Mexico</p>
+                <h3>Instituto Tecnológico de Oaxaca</h3>
+                <p>Avenida Ing. Víctor Bravo Ahuja No. 125</p>
+                <p>Oaxaca de Juárez, Oaxaca, México</p>
                 <br>
                 <div class="contact-item">
                     <span class="icon-label">Tel:</span><span>(951) 501 50 16</span>
@@ -288,7 +298,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2025 Instituto Tecnologico de Oaxaca</p>
+            <p>© 2025 Instituto Tecnológico de Oaxaca</p>
         </div>
     </footer>
 
@@ -300,7 +310,7 @@
             if (body && btn) {
                 if (body.classList.contains('open')) {
                     body.classList.remove('open');
-                    btn.textContent = 'Ver mas';
+                    btn.textContent = 'Ver más';
                 } else {
                     body.classList.add('open');
                     btn.textContent = 'Ver menos';

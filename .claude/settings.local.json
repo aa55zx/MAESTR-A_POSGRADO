@@ -13,7 +13,8 @@
       "Bash(node:*)",
       "Bash(npm install:*)",
       "Bash(del \"C:\\\\Users\\\\merin\\\\Downloads\\\\MAESTR-A_POSGRADO\\\\revista.html\")",
-      "Bash(rename \"C:\\\\Users\\\\merin\\\\Downloads\\\\MAESTR-A_POSGRADO\\\\img\\\\MIGUEL.pgn\" \"MIGUEL.png\")"
+      "Bash(rename \"C:\\\\Users\\\\merin\\\\Downloads\\\\MAESTR-A_POSGRADO\\\\img\\\\MIGUEL.pgn\" \"MIGUEL.png\")",
+      "Bash(xargs -I{} sh -c 'echo \"\"=== {} ===\"\" && cat \"\"{}\"\"')"
     ]
   }
 }
