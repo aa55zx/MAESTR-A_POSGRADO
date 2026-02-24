@@ -1266,6 +1266,19 @@ body {
     margin-bottom: 30px;
 }
 
+.lista-investigacion {
+    list-style: disc;
+    padding-left: 25px;
+    margin-top: 20px;
+}
+
+.lista-investigacion li {
+    color: #333;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
 .tabla-acervo {
     width: 100%;
     border-collapse: collapse;
