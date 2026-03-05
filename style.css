@@ -1476,6 +1476,18 @@ body {
     line-height: 1.3;
 }
 
+.semblanza-link {
+    color: #1a3a5c;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.semblanza-link:hover {
+    color: #e8a020;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .academico-titulo {
     font-size: 13px;
     color: #666;
