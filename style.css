@@ -1507,13 +1507,15 @@ body {
 .semblanza-link {
     color: #1a3a5c;
     text-decoration: none;
-    transition: color 0.2s ease;
+    cursor: pointer;
+    pointer-events: auto;
+    position: relative;
+    z-index: 1;
 }
 
 .semblanza-link:hover {
     color: #e8a020;
     text-decoration: underline;
-    cursor: pointer;
 }
 
 .academico-titulo {
